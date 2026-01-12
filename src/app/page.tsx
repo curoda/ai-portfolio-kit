@@ -1,35 +1,14 @@
 'use client'
 
-import { useState } from 'react'
+const STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/eVq9AS5gcepg3JA4jq6J200'
 
 export default function Home() {
-  const [downloadStarted, setDownloadStarted] = useState(false)
-
   const handlePurchase = () => {
-    // In production, this would connect to Stripe/Gumroad
-    // For demo, we simulate a purchase and trigger download
-    setDownloadStarted(true)
-
-    // Trigger download of the content bundle
-    const link = document.createElement('a')
-    link.href = '/AI-Portfolio-Kit-Complete.zip'
-    link.download = 'AI-Portfolio-Kit-Complete.zip'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+    window.location.href = STRIPE_PAYMENT_LINK
   }
-
-  // Consistent button text for all CTA buttons
-  const ctaButtonText = downloadStarted ? 'Check Your Downloads!' : 'Get Instant Access'
-  const headerButtonText = downloadStarted ? 'Check Your Downloads!' : 'Get Started'
-  const pricingButtonText = downloadStarted ? 'Check Your Downloads!' : 'Download Now — $39'
 
   return (
     <main>
-      {/* Demo Banner */}
-      <div className="w-full py-2 bg-gradient-to-r from-primary to-accent-teal text-white text-[10px] font-medium text-center px-4">
-        Demo Mode — Downloads work, payment is simulated
-      </div>
 
       {/* Navigation */}
       <nav className="flex items-center justify-between px-6 py-5 sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
@@ -37,7 +16,7 @@ export default function Home() {
           <span className="text-xl font-extrabold tracking-tight">AI<span className="text-primary">PortfolioKit</span></span>
         </div>
         <button onClick={handlePurchase} className="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-indigo-500/20">
-          {headerButtonText}
+          Get Started
         </button>
       </nav>
 
@@ -57,7 +36,7 @@ export default function Home() {
         </p>
         <div className="flex flex-col items-center gap-8">
           <button onClick={handlePurchase} className="w-full max-w-xs bg-indigo-500 hover:bg-indigo-600 text-white py-4 rounded-xl text-lg font-bold shadow-xl shadow-indigo-500/30 transition-all transform active:scale-95">
-            {ctaButtonText}
+            Get Instant Access
           </button>
           <div className="relative w-full max-w-lg mt-8 mx-auto perspective-1000">
             <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl border-4 border-slate-800 bg-slate-900 aspect-video transform rotate-1 scale-95 md:scale-100">
@@ -378,7 +357,7 @@ export default function Home() {
             </li>
           </ul>
           <button onClick={handlePurchase} className="w-full bg-indigo-500 hover:bg-indigo-600 text-white py-4 rounded-xl text-lg font-bold transition-all shadow-lg shadow-indigo-500/40 mb-4 active:scale-95">
-            {pricingButtonText}
+            Download Now — $39
           </button>
           <p className="text-center text-[11px] text-slate-400">30-day money-back guarantee. No questions asked.</p>
         </div>
