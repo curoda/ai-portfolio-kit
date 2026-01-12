@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind Config - Custom Colors */
+:root {
+  --color-primary: #6366f1;
+  --color-background-light: #ffffff;
+  --color-background-dark: #0f172a;
+  --color-card-dark: #1e293b;
+  --color-accent-teal: #2dd4bf;
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-image:
+      radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.05) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(45, 212, 191, 0.05) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.05) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(45, 212, 191, 0.05) 0px, transparent 50%);
+    min-height: max(884px, 100dvh);
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .glass {
+    backdrop-filter: blur(10px);
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .mesh-bg {
+    background-color: transparent;
+    background-image: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+/* Custom Color Classes for Tailwind */
+@layer components {
+  .bg-primary { background-color: #6366f1; }
+  .text-primary { color: #6366f1; }
+  .border-primary { border-color: #6366f1; }
+  .shadow-primary\/20 { --tw-shadow-color: rgba(99, 102, 241, 0.2); }
+  .shadow-primary\/30 { --tw-shadow-color: rgba(99, 102, 241, 0.3); }
+  .shadow-primary\/40 { --tw-shadow-color: rgba(99, 102, 241, 0.4); }
+  .from-primary { --tw-gradient-from: #6366f1; }
+  .to-primary { --tw-gradient-to: #6366f1; }
+  .bg-primary\/5 { background-color: rgba(99, 102, 241, 0.05); }
+  .bg-primary\/10 { background-color: rgba(99, 102, 241, 0.1); }
+
+  .bg-accent-teal { background-color: #2dd4bf; }
+  .text-accent-teal { color: #2dd4bf; }
+  .border-accent-teal\/30 { border-color: rgba(45, 212, 191, 0.3); }
+  .bg-accent-teal\/10 { background-color: rgba(45, 212, 191, 0.1); }
+  .bg-accent-teal\/20 { background-color: rgba(45, 212, 191, 0.2); }
+  .bg-accent-teal\/5 { background-color: rgba(45, 212, 191, 0.05); }
+  .to-accent-teal { --tw-gradient-to: #2dd4bf; }
+
+  .bg-background-light { background-color: #ffffff; }
+  .bg-background-dark { background-color: #0f172a; }
+  .bg-background-light\/80 { background-color: rgba(255, 255, 255, 0.8); }
+  .bg-background-dark\/80 { background-color: rgba(15, 23, 42, 0.8); }
+
+  .bg-card-dark { background-color: #1e293b; }
+  .bg-card-dark\/30 { background-color: rgba(30, 41, 59, 0.3); }
+}
+
+/* Hide default summary marker */
+details summary::-webkit-details-marker {
+  display: none;
+}

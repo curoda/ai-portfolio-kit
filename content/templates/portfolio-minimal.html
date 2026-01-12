@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[YOUR NAME] — AI Projects Portfolio</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --text-secondary: #666;
+            --accent: #2563eb;
+            --border: #e5e5e5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 60px 24px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .tagline {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+        }
+
+        .project {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project h3 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        .project h3 a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .project h3 a:hover {
+            color: var(--accent);
+        }
+
+        .project-meta {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .project p {
+            margin-bottom: 16px;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        .skill-category h4 {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category li {
+            padding: 4px 0;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 40px 20px;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>[YOUR NAME]</h1>
+        <p class="tagline">[High School Senior | Aspiring AI Researcher | Class of 2026]</p>
+        <div class="contact-links">
+            <a href="mailto:[your.email@example.com]">Email</a>
+            <a href="https://github.com/[yourusername]" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/[yourusername]" target="_blank">LinkedIn</a>
+            <a href="[link to resume PDF]" target="_blank">Resume</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About</h2>
+        <p class="intro">
+            [Write 2-3 sentences about yourself. Focus on your curiosity, what draws you to AI,
+            and what kind of problems you want to solve. Be authentic—admissions officers read
+            thousands of generic statements. Example: "I became fascinated with AI after using
+            ChatGPT to help my grandmother navigate her new smartphone. That experience sparked
+            my interest in building AI tools that bridge generational technology gaps."]
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Selected Projects</h2>
+
+        <!-- PROJECT 1 -->
+        <div class="project">
+            <h3><a href="[link to project or GitHub repo]">[Project Name]</a></h3>
+            <p class="project-meta">[Month Year] · [Solo project / Team of X]</p>
+            <p>
+                <strong>The Problem:</strong> [1-2 sentences describing the real problem you set out to solve.
+                Be specific. "Students at my school struggle to find relevant scholarship opportunities
+                because there's no centralized, searchable database."]
+            </p>
+            <p>
+                <strong>What I Built:</strong> [1-2 sentences on your solution. Focus on what it does, not
+                how it works technically. "A Custom GPT trained on 500+ scholarships that students can
+                query in natural language to find opportunities matching their profile."]
+            </p>
+            <p>
+                <strong>Impact:</strong> [Quantify if possible, or describe qualitative outcomes.
+                "Used by 47 students in my school. 3 students found and won scholarships they
+                wouldn't have discovered otherwise."]
+            </p>
+            <div class="project-tags">
+                <span class="tag">Custom GPTs</span>
+                <span class="tag">GPT-5</span>
+                <span class="tag">Education</span>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project">
+            <h3><a href="[link to project or GitHub repo]">[Project Name]</a></h3>
+            <p class="project-meta">[Month Year] · [Solo project / Team of X]</p>
+            <p>
+                <strong>The Problem:</strong> [Describe the problem]
+            </p>
+            <p>
+                <strong>What I Built:</strong> [Describe your solution]
+            </p>
+            <p>
+                <strong>Impact:</strong> [Describe the results]
+            </p>
+            <div class="project-tags">
+                <span class="tag">[Tool/Platform]</span>
+                <span class="tag">[Category]</span>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project">
+            <h3><a href="[link to project or GitHub repo]">[Project Name]</a></h3>
+            <p class="project-meta">[Month Year] · [Solo project / Team of X]</p>
+            <p>
+                <strong>The Problem:</strong> [Describe the problem]
+            </p>
+            <p>
+                <strong>What I Built:</strong> [Describe your solution]
+            </p>
+            <p>
+                <strong>Impact:</strong> [Describe the results]
+            </p>
+            <div class="project-tags">
+                <span class="tag">[Tool/Platform]</span>
+                <span class="tag">[Category]</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>AI Platforms</h4>
+                <ul>
+                    <li>GPT-5 & Custom GPTs</li>
+                    <li>Claude Sonnet 4.5</li>
+                    <li>Gemini 2.5 Pro</li>
+                    <li>Perplexity AI</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Automation</h4>
+                <ul>
+                    <li>Zapier</li>
+                    <li>Make.com</li>
+                    <li>IFTTT</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Other Tools</h4>
+                <ul>
+                    <li>NotebookLM</li>
+                    <li>Notion AI</li>
+                    <li>Canva AI</li>
+                    <li>[Add your tools]</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>
+            <strong>[Your High School Name]</strong><br>
+            Expected Graduation: [Month Year]<br>
+            GPA: [X.XX] | [Relevant coursework, AP classes, etc.]
+        </p>
+    </section>
+
+    <footer>
+        <p>Last updated: [Month 2026]</p>
+    </footer>
+</body>
+</html>

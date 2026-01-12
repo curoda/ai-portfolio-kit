@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[YOUR NAME] — AI Research & Projects</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-alt: #f9fafb;
+            --text: #111827;
+            --text-secondary: #6b7280;
+            --accent: #1e40af;
+            --accent-light: #3b82f6;
+            --border: #e5e7eb;
+            --success: #059669;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* Header */
+        header {
+            background: var(--bg-alt);
+            border-bottom: 1px solid var(--border);
+            padding: 48px 0;
+        }
+
+        .header-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 40px;
+            align-items: start;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .affiliation {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        .contact-info {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .header-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .header-links a {
+            font-family: -apple-system, sans-serif;
+            font-size: 0.85rem;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .header-links a:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: -apple-system, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Main Content */
+        main {
+            padding: 48px 0;
+        }
+
+        section {
+            margin-bottom: 56px;
+        }
+
+        h2 {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text);
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--text);
+        }
+
+        /* Research Interests */
+        .interests-list {
+            columns: 2;
+            column-gap: 40px;
+        }
+
+        .interests-list p {
+            margin-bottom: 12px;
+            break-inside: avoid;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .project h3 {
+            font-family: -apple-system, sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+
+        .project h3 a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .project h3 a:hover {
+            color: var(--accent);
+        }
+
+        .project-date {
+            font-family: -apple-system, sans-serif;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            background: var(--bg-alt);
+            padding: 4px 12px;
+            border-radius: 4px;
+        }
+
+        .project-meta {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+        }
+
+        .project-body p {
+            margin-bottom: 12px;
+        }
+
+        .project-body strong {
+            font-family: -apple-system, sans-serif;
+            font-weight: 600;
+        }
+
+        .project-outcomes {
+            background: var(--bg-alt);
+            padding: 16px 20px;
+            border-left: 3px solid var(--success);
+            margin-top: 16px;
+            font-family: -apple-system, sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .project-outcomes strong {
+            color: var(--success);
+        }
+
+        .tools-used {
+            margin-top: 16px;
+            font-family: -apple-system, sans-serif;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .tools-used span {
+            background: var(--bg-alt);
+            padding: 2px 10px;
+            border-radius: 3px;
+            margin-right: 8px;
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 24px;
+        }
+
+        .education-item h3 {
+            font-family: -apple-system, sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .education-item .degree {
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .education-item .details {
+            font-family: -apple-system, sans-serif;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+        }
+
+        .skill-category h4 {
+            font-family: -apple-system, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--accent);
+        }
+
+        .skill-category ul {
+            list-style: none;
+            font-family: -apple-system, sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .skill-category li {
+            padding: 4px 0;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-alt);
+            border-top: 1px solid var(--border);
+            padding: 32px 0;
+            text-align: center;
+            font-family: -apple-system, sans-serif;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                grid-template-columns: 1fr;
+            }
+            .header-links {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .interests-list {
+                columns: 1;
+            }
+            nav ul {
+                gap: 16px;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <h1>[Your Full Name]</h1>
+                    <p class="affiliation">
+                        [Your High School Name], Class of [2026]<br>
+                        [City, State]
+                    </p>
+                    <p class="contact-info">
+                        <a href="mailto:[email]">[your.email]@example.com</a> ·
+                        <a href="https://github.com/[username]">GitHub</a> ·
+                        <a href="https://linkedin.com/in/[username]">LinkedIn</a>
+                    </p>
+                </div>
+                <div class="header-links">
+                    <a href="[resume.pdf]">Download CV</a>
+                    <a href="mailto:[email]">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+
+            <!-- About Section -->
+            <section id="about">
+                <h2>About</h2>
+                <p>
+                    [Write a substantive paragraph about your research interests and goals.
+                    This should read more academically than a typical "about me"—focus on
+                    intellectual curiosity and the questions that drive you. Example:]
+                </p>
+                <p>
+                    I am a high school student interested in the applications of artificial
+                    intelligence to [specific domain]. My work focuses on [specific area],
+                    particularly exploring how AI tools can be used to [specific goal].
+                    I am motivated by the belief that [your thesis/perspective on AI's role].
+                </p>
+            </section>
+
+            <!-- Research Interests -->
+            <section id="interests">
+                <h2>Research Interests</h2>
+                <div class="interests-list">
+                    <p>• Human-AI interaction and collaboration</p>
+                    <p>• AI applications in [your domain]</p>
+                    <p>• Accessible AI tools for non-technical users</p>
+                    <p>• [Your specific interest]</p>
+                    <p>• [Your specific interest]</p>
+                    <p>• [Your specific interest]</p>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <!-- Project 1 -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3><a href="[project link]">[Project Name]</a></h3>
+                        <span class="project-date">[Month Year – Present/Month Year]</span>
+                    </div>
+                    <p class="project-meta">
+                        [Role: Lead Developer / Solo Project / Team Member] ·
+                        [Advisor: Name, if applicable]
+                    </p>
+                    <div class="project-body">
+                        <p>
+                            <strong>Background:</strong> [1-2 sentences on the context and problem.
+                            "Students at [school/organization] faced challenges with [specific problem],
+                            resulting in [negative outcome]."]
+                        </p>
+                        <p>
+                            <strong>Approach:</strong> [1-2 sentences on your methodology.
+                            "Developed a [type of solution] using [tools/platforms] that [how it works].
+                            The system [key technical/design decisions]."]
+                        </p>
+                        <p>
+                            <strong>Results:</strong> [1-2 sentences on outcomes.
+                            "The tool has been used by [N] users, resulting in [measurable outcome].
+                            User feedback indicated [qualitative finding]."]
+                        </p>
+                    </div>
+                    <div class="project-outcomes">
+                        <strong>Key Outcome:</strong> [Single most impressive result, e.g.,
+                        "Helped 3 students secure scholarships totaling $47,000"]
+                    </div>
+                    <div class="tools-used">
+                        <strong>Tools:</strong>
+                        <span>GPT-5</span>
+                        <span>Custom GPTs</span>
+                        <span>Zapier</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3><a href="[project link]">[Project Name]</a></h3>
+                        <span class="project-date">[Month Year]</span>
+                    </div>
+                    <p class="project-meta">
+                        [Role] · [Context: Personal project / School project / Internship]
+                    </p>
+                    <div class="project-body">
+                        <p>
+                            <strong>Background:</strong> [Problem context]
+                        </p>
+                        <p>
+                            <strong>Approach:</strong> [Your methodology]
+                        </p>
+                        <p>
+                            <strong>Results:</strong> [Outcomes]
+                        </p>
+                    </div>
+                    <div class="tools-used">
+                        <strong>Tools:</strong>
+                        <span>[Tool 1]</span>
+                        <span>[Tool 2]</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3><a href="[project link]">[Project Name]</a></h3>
+                        <span class="project-date">[Month Year]</span>
+                    </div>
+                    <p class="project-meta">[Role] · [Context]</p>
+                    <div class="project-body">
+                        <p>
+                            <strong>Background:</strong> [Problem context]
+                        </p>
+                        <p>
+                            <strong>Approach:</strong> [Your methodology]
+                        </p>
+                        <p>
+                            <strong>Results:</strong> [Outcomes]
+                        </p>
+                    </div>
+                    <div class="tools-used">
+                        <strong>Tools:</strong>
+                        <span>[Tool 1]</span>
+                        <span>[Tool 2]</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>[Your High School Name]</h3>
+                    <p class="degree">High School Diploma (Expected [Month 2026])</p>
+                    <p class="details">
+                        GPA: [X.XX/4.0] · Class Rank: [if applicable]<br>
+                        Relevant Coursework: [AP Computer Science, Statistics, etc.]<br>
+                        Activities: [Relevant clubs, competitions, leadership roles]
+                    </p>
+                </div>
+
+                <!-- Add any additional education: summer programs, online courses, etc. -->
+                <div class="education-item">
+                    <h3>[Program/Course Name, if applicable]</h3>
+                    <p class="degree">[Certificate/Completion] · [Institution] · [Year]</p>
+                    <p class="details">
+                        [Brief description of what you learned or accomplished]
+                    </p>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>AI Platforms</h4>
+                        <ul>
+                            <li>GPT-5 & Custom GPTs</li>
+                            <li>Claude Sonnet 4.5</li>
+                            <li>Gemini 2.5 Pro</li>
+                            <li>Perplexity Deep Research</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Automation & Integration</h4>
+                        <ul>
+                            <li>Zapier</li>
+                            <li>Make.com (Integromat)</li>
+                            <li>IFTTT</li>
+                            <li>Airtable</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Productivity & Research</h4>
+                        <ul>
+                            <li>NotebookLM</li>
+                            <li>Notion + Notion AI</li>
+                            <li>Obsidian</li>
+                            <li>Zotero</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Other</h4>
+                        <ul>
+                            <li>[Programming languages, if any]</li>
+                            <li>[Design tools]</li>
+                            <li>[Other relevant skills]</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Last updated: [Month 2026] · Built with care</p>
+        </div>
+    </footer>
+</body>
+</html>
