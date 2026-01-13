@@ -27,8 +27,8 @@ export default function Home() {
           <span className="w-1.5 h-1.5 rounded-full bg-accent-teal animate-pulse"></span>
           FOR HIGH SCHOOL &amp; COLLEGE STUDENTS
         </div>
-        <h1 className="text-4xl font-extrabold leading-tight tracking-tight mb-6">
-          Turn Your AI Projects Into <br />
+        <h1 className="text-4xl font-extrabold leading-tight tracking-tight mb-6 text-gray-900 dark:text-white">
+          <span className="text-gray-900 dark:text-white">Turn Your AI Projects Into</span> <br />
           <span className="gradient-text">College Admission Gold</span>
         </h1>
         <p className="text-slate-500 dark:text-slate-400 text-base max-w-sm mx-auto mb-10 leading-relaxed">
@@ -48,8 +48,8 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center gap-2 text-sm">
-            <span className="font-bold text-lg">$39</span>
-            <span className="text-slate-400">One-time purchase, lifetime access</span>
+            <span className="font-bold text-lg text-gray-900 dark:text-white">$39</span>
+            <span className="text-slate-500 dark:text-slate-400">One-time purchase, lifetime access</span>
           </div>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function Home() {
       <section className="px-6 py-20 relative overflow-hidden">
         <div className="absolute top-40 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-extrabold mb-4">The Problem</h2>
+          <h2 className="text-3xl font-extrabold mb-4 text-gray-900 dark:text-white">The Problem</h2>
           <p className="text-slate-500 dark:text-slate-400">Admissions officers can&apos;t see what&apos;s in your head.</p>
         </div>
         <div className="space-y-4">
@@ -80,7 +80,7 @@ export default function Home() {
             <div className="w-12 h-12 flex items-center justify-center bg-amber-500/10 rounded-xl mb-4 shadow-inner shadow-amber-500/20">
               <span className="material-symbols-outlined text-amber-500">priority_high</span>
             </div>
-            <h3 className="font-bold text-lg mb-2">Everyone Claims &quot;AI Skills&quot;</h3>
+            <h3 className="font-bold text-lg mb-2 text-gray-900 dark:text-white">Everyone Claims &quot;AI Skills&quot;</h3>
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Thousands of applicants write &quot;proficient in AI&quot;. Without proof, you blend in with the crowd.</p>
           </div>
           <div className="p-6 rounded-2xl bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-700 shadow-sm relative overflow-hidden group">
@@ -90,7 +90,7 @@ export default function Home() {
             <div className="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mb-4 shadow-inner shadow-primary/20">
               <span className="material-symbols-outlined text-primary">analytics</span>
             </div>
-            <h3 className="font-bold text-lg mb-2">Technical Work is Hard to Explain</h3>
+            <h3 className="font-bold text-lg mb-2 text-gray-900 dark:text-white">Technical Work is Hard to Explain</h3>
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">You built something cool, but how do you describe it to a non-technical admissions officer?</p>
           </div>
           <div className="p-6 rounded-2xl bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-700 shadow-sm relative overflow-hidden group">
@@ -100,7 +100,7 @@ export default function Home() {
             <div className="w-12 h-12 flex items-center justify-center bg-accent-teal/10 rounded-xl mb-4 shadow-inner shadow-accent-teal/20">
               <span className="material-symbols-outlined text-accent-teal">person_search</span>
             </div>
-            <h3 className="font-bold text-lg mb-2">No Portfolio = No Proof</h3>
+            <h3 className="font-bold text-lg mb-2 text-gray-900 dark:text-white">No Portfolio = No Proof</h3>
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Stanford and MIT want to see your work. A resume bullet point isn&apos;t enough anymore.</p>
           </div>
         </div>
@@ -121,14 +121,14 @@ export default function Home() {
                 <img alt="Template Preview" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4iYR35KYz54e3Ac1c0l9rmVnMy4LFLIvErqjsSA1slMbRFTxjY0jYnTQYUbHq9W7CC_D-YMlGzHM75nOiawcbrtbRpLAD-awKJFvN241a9kWVgprt8ixD3TZaRBkw8Mn1vhXWvQlZ7Xi4gqPt1iw2S03E463VuE-1LUMYRbQjzE4Bk0w3Rshi0gFyad7CHjDjPc53TmcAIrtyqLPOIah4ZedVMrj7uLS4_0WZQocrETrgu1jOmgay_6kbFT9sgxqx5HQMPFp360Zl" />
               </div>
             </div>
-            <h3 className="font-bold text-xl mb-2">Portfolio Website Templates</h3>
+            <h3 className="font-bold text-xl mb-2 text-gray-900 dark:text-white">Portfolio Website Templates</h3>
             <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">Beautiful, ready-to-deploy templates designed specifically for AI project portfolios.</p>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-sm">
+              <li className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
                 <span className="material-symbols-outlined text-accent-teal text-lg">check_circle</span>
                 <span>3 complete HTML/CSS templates</span>
               </li>
-              <li className="flex items-start gap-3 text-sm">
+              <li className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
                 <span className="material-symbols-outlined text-accent-teal text-lg">check_circle</span>
                 <span>Mobile-responsive designs</span>
               </li>
@@ -141,14 +141,14 @@ export default function Home() {
                 <img alt="Framework Preview" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8S5kFwplMkumpqymS8hQ9EQM-MZrtr8MIY4ITS2UuK5vZK0s6x9kcG0IxwkYPTSJFQOIPgEU-pkpldaQUKvjN47Ush9xwnbYJ5Y2_co5tBrBzd0DZHpvhLkpLVjuVxvWfkCWhtwoPIEeuntuYcWfg2__HAnuoItGgitByI2Xisb8zVfSB9BlqSiN9LMmJ3LsLj67Y9GGfx0VyRdguLTcqAY0Ze7oiHWSL266R-1yD4UvJ_VqVk6e8jMBWhhUGi9XMikYpvfm-H3yL" />
               </div>
             </div>
-            <h3 className="font-bold text-xl mb-2">Project Write-Up Framework</h3>
+            <h3 className="font-bold text-xl mb-2 text-gray-900 dark:text-white">Project Write-Up Framework</h3>
             <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">The exact structure to explain AI projects so anyone understands the value.</p>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-sm">
+              <li className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
                 <span className="material-symbols-outlined text-accent-teal text-lg">check_circle</span>
                 <span>The &quot;Problem → Solution → Impact&quot; template</span>
               </li>
-              <li className="flex items-start gap-3 text-sm">
+              <li className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
                 <span className="material-symbols-outlined text-accent-teal text-lg">check_circle</span>
                 <span>10 real before/after examples</span>
               </li>
@@ -161,14 +161,14 @@ export default function Home() {
                 <div className="p-2 text-[8px] font-mono text-emerald-400"># README.md<br />&gt; Building my first AI agent...</div>
               </div>
             </div>
-            <h3 className="font-bold text-xl mb-2">GitHub README Templates</h3>
+            <h3 className="font-bold text-xl mb-2 text-gray-900 dark:text-white">GitHub README Templates</h3>
             <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">Professional documentation that makes your projects look polished and complete.</p>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-sm">
+              <li className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
                 <span className="material-symbols-outlined text-accent-teal text-lg">check_circle</span>
                 <span>5 README templates for different project types</span>
               </li>
-              <li className="flex items-start gap-3 text-sm">
+              <li className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
                 <span className="material-symbols-outlined text-accent-teal text-lg">check_circle</span>
                 <span>Badge generators for tech stack</span>
               </li>
@@ -181,14 +181,14 @@ export default function Home() {
                 <img alt="Idea Preview" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP1-ipNpOG8iU7BaN6Wqwg92pU9-lQvKBz2YRoS6Il32cS3cvE-qRbP7w9c2zKDq6kwpoUNOaP1uI6kkvl1H6Y3yQ0HJUe3OgekOO40ar9xT2nPRYrx7tScdvvAfkFdVH2bW-zsvKzdKtomjI9XQNgAFo8PpKWsumLXE1qEqvdBaA9_iHZG9u7vC0qJhfkl8DJ6gjo9KXVYvtBnOSVS3lpWHsIkNwtX5gm1l26UL2YNT6RdOCp6V5wjeaZQ5o6dFP9zcBQc7uqO1Qe" />
               </div>
             </div>
-            <h3 className="font-bold text-xl mb-2">50+ No-Code AI Ideas</h3>
+            <h3 className="font-bold text-xl mb-2 text-gray-900 dark:text-white">50+ No-Code AI Ideas</h3>
             <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">Impressive projects you can build this weekend—no programming required.</p>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-sm">
+              <li className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
                 <span className="material-symbols-outlined text-accent-teal text-lg">check_circle</span>
                 <span>Ranked by impressiveness &amp; feasibility</span>
               </li>
-              <li className="flex items-start gap-3 text-sm">
+              <li className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
                 <span className="material-symbols-outlined text-accent-teal text-lg">check_circle</span>
                 <span>Step-by-step guides for top 15</span>
               </li>
@@ -200,7 +200,7 @@ export default function Home() {
       {/* Sample Project Ideas */}
       <section className="px-6 py-20 relative overflow-hidden">
         <div className="absolute -left-20 top-40 w-64 h-64 bg-accent-teal/5 rounded-full blur-3xl -z-10"></div>
-        <h2 className="text-3xl font-extrabold text-center mb-10">Sample Project Ideas</h2>
+        <h2 className="text-3xl font-extrabold text-center mb-10 text-gray-900 dark:text-white">Sample Project Ideas</h2>
         <div className="grid grid-cols-1 gap-6">
           <div className="p-6 rounded-2xl bg-indigo-50/50 dark:bg-indigo-900/10 border border-indigo-100 dark:border-indigo-900/50 relative overflow-hidden group">
             <div className="absolute -right-4 top-1/2 -translate-y-1/2 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -210,7 +210,7 @@ export default function Home() {
               <span className="material-symbols-outlined text-sm">science</span>
               Research &amp; Analysis
             </h4>
-            <ul className="space-y-3 text-sm relative z-10">
+            <ul className="space-y-3 text-sm relative z-10 text-slate-700 dark:text-slate-300">
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary/40"></span>
                 Literature review assistant using Deep Research
@@ -229,7 +229,7 @@ export default function Home() {
               <span className="material-symbols-outlined text-sm">rocket_launch</span>
               Productivity Tools
             </h4>
-            <ul className="space-y-3 text-sm relative z-10">
+            <ul className="space-y-3 text-sm relative z-10 text-slate-700 dark:text-slate-300">
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500/40"></span>
                 Custom GPT for school course catalog
@@ -248,7 +248,7 @@ export default function Home() {
               <span className="material-symbols-outlined text-sm">auto_awesome</span>
               Creative Applications
             </h4>
-            <ul className="space-y-3 text-sm relative z-10">
+            <ul className="space-y-3 text-sm relative z-10 text-slate-700 dark:text-slate-300">
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-rose-500/40"></span>
                 AI-powered story collaboration tool
@@ -264,30 +264,30 @@ export default function Home() {
 
       {/* Tools Section */}
       <section className="px-6 py-16 text-center bg-slate-50 dark:bg-card-dark/30 border-y border-slate-100 dark:border-slate-800">
-        <h2 className="text-2xl font-bold mb-8">Built for 2026&apos;s AI Tools</h2>
+        <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Built for 2026&apos;s AI Tools</h2>
         <div className="grid grid-cols-3 gap-3">
           <div className="p-4 bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm">
-            <div className="font-bold text-xs">GPT-5</div>
+            <div className="font-bold text-xs text-gray-900 dark:text-white">GPT-5</div>
             <div className="text-[10px] text-slate-400 uppercase mt-1">OpenAI</div>
           </div>
           <div className="p-4 bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm">
-            <div className="font-bold text-xs">Claude 3.5</div>
+            <div className="font-bold text-xs text-gray-900 dark:text-white">Claude 3.5</div>
             <div className="text-[10px] text-slate-400 uppercase mt-1">Anthropic</div>
           </div>
           <div className="p-4 bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm">
-            <div className="font-bold text-xs">Gemini 2.5</div>
+            <div className="font-bold text-xs text-gray-900 dark:text-white">Gemini 2.5</div>
             <div className="text-[10px] text-slate-400 uppercase mt-1">Google</div>
           </div>
           <div className="p-4 bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm">
-            <div className="font-bold text-xs">Custom GPTs</div>
+            <div className="font-bold text-xs text-gray-900 dark:text-white">Custom GPTs</div>
             <div className="text-[10px] text-slate-400 uppercase mt-1">Builder</div>
           </div>
           <div className="p-4 bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm">
-            <div className="font-bold text-xs">Perplexity</div>
+            <div className="font-bold text-xs text-gray-900 dark:text-white">Perplexity</div>
             <div className="text-[10px] text-slate-400 uppercase mt-1">AI Search</div>
           </div>
           <div className="p-4 bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm">
-            <div className="font-bold text-xs">Make.com</div>
+            <div className="font-bold text-xs text-gray-900 dark:text-white">Make.com</div>
             <div className="text-[10px] text-slate-400 uppercase mt-1">Automation</div>
           </div>
         </div>
@@ -296,7 +296,7 @@ export default function Home() {
       {/* Testimonials */}
       <section className="px-6 py-20 relative overflow-hidden">
         <div className="absolute -right-20 bottom-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
-        <h2 className="text-3xl font-extrabold text-center mb-10">What Students Say</h2>
+        <h2 className="text-3xl font-extrabold text-center mb-10 text-gray-900 dark:text-white">What Students Say</h2>
         <div className="space-y-6">
           <div className="p-6 rounded-2xl bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-700 shadow-xl shadow-slate-200/50 dark:shadow-none italic text-slate-600 dark:text-slate-300 relative">
             <span className="material-symbols-outlined absolute top-4 right-4 text-slate-100 dark:text-slate-800 text-6xl -z-10">format_quote</span>
@@ -304,7 +304,7 @@ export default function Home() {
             <div className="flex items-center gap-3 mt-6 not-italic">
               <img alt="Jessica L." className="w-10 h-10 rounded-full object-cover border-2 border-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV93xdKTVPL6zBTZeGzsWrwh9wqH5qvVfyR-8p9ssQEcZ3EUHJH72w_8e2W2sjEkIJg2DHHRSpgIx1wWiN2w9QONNBXMkVRk7aYGmw03D775w4CnNecsdtR98CNXuSeXCmImLFs786YE3CIVP9SlS9ln1FqpG3rWUozO_mQsE0NouWt-nV4WW90OAHZ1ouw5yXWr-RhmFA78tx-XXIWmjMQv0UkyJCzlP-p-tLe2Z3yE0UitokeJYtUfxZ9pqj6lMcZlqegsG0JTn6" />
               <div>
-                <div className="text-sm font-bold text-slate-900 dark:text-white">Jessica L.</div>
+                <div className="text-sm font-bold text-gray-900 dark:text-white">Jessica L.</div>
                 <div className="text-[10px] text-slate-400 font-semibold tracking-wide uppercase">Admitted to Stanford &apos;30</div>
               </div>
             </div>
@@ -315,7 +315,7 @@ export default function Home() {
             <div className="flex items-center gap-3 mt-6 not-italic">
               <img alt="Marcus K." className="w-10 h-10 rounded-full object-cover border-2 border-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPp5M7D9KbKe-7sGphW_7XVyD54aMZ4B6XN6YQSaVd65KianVg_wB7CxlkYFFFmJ8eFoe3d8juvUOf4m0YxTRLdBCnc9RAGgsedR8U9P6-Wnn2t4xABlCfkiodu_9uQLBk2ratKlBgDjtk2AYFmqdTW0HIacDgVyduVSFzmnSt-WXqXO2thsg44jU3oJeUu6kaksna6YW33_JJpAT-KMJJGTsSwsI2WwDNpPwHy9hYvO3rNJZgN2N8w3rJHHRlzHBHCeV1FNz9CkcN" />
               <div>
-                <div className="text-sm font-bold text-slate-900 dark:text-white">Marcus K.</div>
+                <div className="text-sm font-bold text-gray-900 dark:text-white">Marcus K.</div>
                 <div className="text-[10px] text-slate-400 font-semibold tracking-wide uppercase">High School Senior</div>
               </div>
             </div>
@@ -329,25 +329,25 @@ export default function Home() {
           <div className="absolute top-0 right-0 p-4">
             <span className="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Best Value</span>
           </div>
-          <h2 className="text-2xl font-extrabold text-center mb-2">Get the Complete Kit</h2>
+          <h2 className="text-2xl font-extrabold text-center mb-2 text-gray-900 dark:text-white">Get the Complete Kit</h2>
           <div className="text-center mb-8">
-            <span className="text-5xl font-extrabold">$39</span>
+            <span className="text-5xl font-extrabold text-gray-900 dark:text-white">$39</span>
             <p className="text-[10px] text-slate-400 uppercase font-bold tracking-widest mt-2">One-time purchase • Instant Download</p>
           </div>
           <ul className="space-y-4 mb-10">
-            <li className="flex items-center gap-3 text-sm">
+            <li className="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-200">
               <span className="material-symbols-outlined text-primary text-xl">check_circle</span>
               <span>3 Portfolio Website Templates</span>
             </li>
-            <li className="flex items-center gap-3 text-sm">
+            <li className="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-200">
               <span className="material-symbols-outlined text-primary text-xl">check_circle</span>
               <span>Project Write-Up Framework + 10 Examples</span>
             </li>
-            <li className="flex items-center gap-3 text-sm">
+            <li className="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-200">
               <span className="material-symbols-outlined text-primary text-xl">check_circle</span>
               <span>5 GitHub README Templates</span>
             </li>
-            <li className="flex items-center gap-3 text-sm">
+            <li className="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-200">
               <span className="material-symbols-outlined text-primary text-xl">check_circle</span>
               <span>50+ No-Code AI Project Ideas</span>
             </li>
@@ -365,10 +365,10 @@ export default function Home() {
 
       {/* FAQ Section */}
       <section className="px-6 py-20 relative">
-        <h2 className="text-3xl font-extrabold text-center mb-10">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-extrabold text-center mb-10 text-gray-900 dark:text-white">Frequently Asked Questions</h2>
         <div className="space-y-4 max-w-lg mx-auto">
           <details className="group border border-slate-200 dark:border-slate-800 rounded-xl bg-white/50 dark:bg-card-dark overflow-hidden backdrop-blur-sm shadow-sm">
-            <summary className="flex justify-between items-center p-5 cursor-pointer font-bold text-sm list-none">
+            <summary className="flex justify-between items-center p-5 cursor-pointer font-bold text-sm list-none text-gray-900 dark:text-white">
               Do I need to know how to code?
               <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
             </summary>
@@ -377,7 +377,7 @@ export default function Home() {
             </div>
           </details>
           <details className="group border border-slate-200 dark:border-slate-800 rounded-xl bg-white/50 dark:bg-card-dark overflow-hidden backdrop-blur-sm shadow-sm">
-            <summary className="flex justify-between items-center p-5 cursor-pointer font-bold text-sm list-none">
+            <summary className="flex justify-between items-center p-5 cursor-pointer font-bold text-sm list-none text-gray-900 dark:text-white">
               Will these actually impress admissions?
               <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
             </summary>
@@ -386,7 +386,7 @@ export default function Home() {
             </div>
           </details>
           <details className="group border border-slate-200 dark:border-slate-800 rounded-xl bg-white/50 dark:bg-card-dark overflow-hidden backdrop-blur-sm shadow-sm">
-            <summary className="flex justify-between items-center p-5 cursor-pointer font-bold text-sm list-none">
+            <summary className="flex justify-between items-center p-5 cursor-pointer font-bold text-sm list-none text-gray-900 dark:text-white">
               How long does it take to build a project?
               <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
             </summary>
